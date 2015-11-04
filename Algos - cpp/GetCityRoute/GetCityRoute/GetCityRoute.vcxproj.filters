@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{11fa71e6-4d4b-41a0-9b93-c012bfef9bf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{3346908a-6cc5-4542-8273-db41617c18b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{18f35018-6c3c-4235-9667-a1c9b1b02c0f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\FileReader\FileReader.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FileParser\FileParser.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="StoreGraphData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DFS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClosedLoops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GetRoute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TopoSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FarthestNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BFS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShortestDistance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\FileParser\FileParser.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FileReader\FileReader.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StoreGraphData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DFS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClosedLoops.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GetRoute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TopoSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FarthestNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BFS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShortestDistance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+A:B
+B:A
+A:C
+B:D
+C:F
+C:G
+C:H
+C:E
+D:E
+F:I
+G:J
+G:I
+G:K
+H:K
+K:L

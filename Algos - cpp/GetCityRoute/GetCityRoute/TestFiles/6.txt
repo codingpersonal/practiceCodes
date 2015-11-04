@@ -1,0 +1,7 @@
+A:B
+B:X
+B:C
+C:D
+D:Y
+D:A
+C:C
