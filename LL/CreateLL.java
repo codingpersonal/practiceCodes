@@ -50,12 +50,12 @@ public class CreateLL {
 	}
 
 //Function for printing the LL
-	public void printLL() {
+	public void printLL(Node start) {
 		Node temp = new Node();
 		temp = start;
 
 		while (temp != null) {
-			System.out.println(temp.value + " ");
+			System.out.print(temp.value + " ");
 			temp = temp.next;
 		}
 	}

@@ -142,6 +142,24 @@ public class LinkListDriver {
 //		
 		
 //-------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		LLReverse rev = new LLReverse();
+		Node startNode = null;
+
+		CreateLL cll = new CreateLL(startNode);
+		
+		int val1[]={1,2,3,4,5};
+
+		for(int i=0; i< val1.length; i++) {
+			startNode= cll.addElement(val1[i]);
+		}
+		System.out.println("Original LL:");
+		cll.printLL(startNode);
+		
+		Node newStart = rev.reverseList(startNode);
+		
+		System.out.println("\nReversed LL:");
+		cll.printLL(newStart);
 	}
 
 }
