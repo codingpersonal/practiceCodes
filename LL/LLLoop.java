@@ -62,4 +62,68 @@ public class LLLoop {
 		}
 		return count;
 	}
+	
+	// find loop in simple form, just check if maste == slave.
+	public void findLoop(Node start) {
+		Node master , slave;
+		master = start;
+		slave = start;
+		boolean flag = false;
+		while(master.next != null) {
+			master = master.next.next;
+			slave = slave.next;
+			if(master == slave) {
+				flag = true;
+				break;
+			}
+		}
+		if(flag) {
+			System.out.println("Loop exists.");
+			int count = 1;
+			while(master.next != slave) {
+				master = master.next;
+				count++;
+			}
+			System.out.println("Length:" + count);
+		} else {
+			System.out.println("No Loop.");
+		}
+	}
+	
+	public static void  main(String args[]) {
+		Node startNode = null;
+		CreateLL cll = new CreateLL(startNode);
+		
+		int val1[]={1,2,3,4,5};
+		for(int i=0; i< val1.length; i++) {
+			startNode= cll.addElement(val1[i]);
+		}
+		
+		//moving t till end of the list.
+		Node t;
+		t= startNode;
+		
+		while(t.next != null) {
+			t= t.next;
+		}
+		
+		t.next = startNode;
+		
+		//t1 lies somewhere in the middle.
+		//N1 is start
+		//t is at the end
+//		Node t1 = startNode;
+//		t1 = t1.next;
+//		t1 = t1.next;
+//		t1 = t1.next;
+//		
+//		t.next = t1;
+		
+		
+		LLLoop l = new LLLoop();
+		l.findLoop(startNode);
+		l.checkLoop(startNode);
+		
+		
+	}
 }
